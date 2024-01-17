@@ -17,12 +17,23 @@ public class Police implements Observer
 
     public void update(String location, String description, ArrayList<String> accomplices)
     {
-
+        locations.add(location);
+        notes += ("/n- " + description);
+        for(String s : accomplices)
+            people.add(s);
     }
     
     public String getLog()
     {
-        
+        String s = "Locations:";
+        for(String a : locations)
+            s+=("/n- " + a);
+        s+= "/nNotes:";
+        s+= "/n" + notes;
+        s+="/nAccomplices:";
+        for(String a : people)
+            s+=("/n- " + a);
+        return s;
     }
 
 }
