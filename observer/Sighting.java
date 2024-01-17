@@ -26,6 +26,6 @@ public class Sighting
 
     public String getAccomplices()
     {
-        return ("with" + accomplices);
+        return ("with " + accomplices.toString().substring(1,accomplices.toString().length()-1));
     }
 }

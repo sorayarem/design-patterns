@@ -22,7 +22,7 @@ public class Cartel implements Observer
     {
         String s = "";
         for(Sighting sight : sightings)
-            s+=("\n"+ sight.getLocation() + " (" + sight.getDetails() + "), " + sight.getAccomplices());
+            s+=(sight.getLocation() + " (" + sight.getDetails() + "), " + sight.getAccomplices()+ "\n");
         return s;
     }
 }

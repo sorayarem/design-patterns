@@ -12,6 +12,7 @@ public class Police implements Observer
     {
         this.cook = cook;
         cook.registerObserver(this);
+        notes = "";
         locations = new ArrayList<String>();
         people = new ArrayList<String>();
     }
@@ -21,7 +22,8 @@ public class Police implements Observer
         locations.add(location);
         notes += ("\n- " + description);
         for(String s : accomplices)
-            people.add(s);
+            if(!people.contains(s))
+                people.add(s);
     }
     
     public String getLog()
@@ -29,9 +31,9 @@ public class Police implements Observer
         String s = "Locations:";
         for(String a : locations)
             s+=("\n- " + a);
-        s+= "\nNotes:";
-        s+= "\n" + notes;
-        s+="\nAccomplices:";
+        s+= "\n\nNotes:";
+        s+= notes;
+        s+="\n\nAccomplices:";
         for(String a : people)
             s+=("\n- " + a);
         return s;
