@@ -31,8 +31,7 @@ public class Police implements Observer
         String s = "Locations:";
         for(String a : locations)
             s+=("\n- " + a);
-        s+= "\n\nNotes:";
-        s+= notes;
+        s+= "\n\nNotes:"+ notes;
         s+="\n\nAccomplices:";
         for(String a : people)
             s+=("\n- " + a);
