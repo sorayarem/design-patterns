@@ -1,6 +1,10 @@
 package observer;
 import java.util.*;
 
+/**
+ * The interface for Subjects.
+ * @author Soraya Remaili
+ */
 public interface Subject 
 {
     public void registerObserver(Observer observer);

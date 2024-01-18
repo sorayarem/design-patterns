@@ -1,6 +1,10 @@
 package observer;
 import java.util.*;
 
+/**
+ * The police force tracking Heisenberg.
+ * @author Soraya Remaili
+ */
 public class Police implements Observer
 {
     private Subject cook;
@@ -8,6 +12,10 @@ public class Police implements Observer
     private String notes;
     private ArrayList<String> people;
 
+    /**
+     * Creates a new Police that watches the indicated Subject.
+     * @param cook The subject that the Police is observing.
+     */
     public Police(Subject cook)
     {
         this.cook = cook;
@@ -17,6 +25,9 @@ public class Police implements Observer
         people = new ArrayList<String>();
     }
 
+     /*
+     * Updates the Police's information fields with the given information.
+     */
     public void update(String location, String description, ArrayList<String> accomplices)
     {
         locations.add(location);
@@ -26,6 +37,10 @@ public class Police implements Observer
                 people.add(s);
     }
     
+    /**
+     * Creates a string representation of the log of the Police's gathered information.
+     * @return A string representation of the Police's information.
+     */
     public String getLog()
     {
         String s = "Locations:";

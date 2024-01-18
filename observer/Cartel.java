@@ -1,11 +1,18 @@
 package observer;
 import java.util.*;
-
+/**
+ * The drug cartel tracking Heisenberg.
+ * @author Soraya Remaili
+ */
 public class Cartel implements Observer
 {
     private Subject cook;
     private ArrayList<Sighting> sightings;
 
+    /**
+     * Creates a new Cartel that watches the indicated Subject.
+     * @param cook The subject that the cartel is observing.
+     */
     public Cartel(Subject cook)
     {
         this.cook = cook;
@@ -13,11 +20,18 @@ public class Cartel implements Observer
         sightings = new ArrayList<Sighting>();
     }
 
+    /*
+     * Adds a new sighting to the cartel's list with the given information.
+     */
     public void update(String location, String description, ArrayList<String> accomplices)
     {
         sightings.add(new Sighting(location, description, accomplices));
     }
     
+    /**
+     * Creates a string representation of the log of the cartel's sightings.
+     * @return A string representation of the cartel's sightings.
+     */
     public String getLog()
     {
         String s = "";

@@ -1,12 +1,22 @@
 package observer;
 import java.util.*;
 
+/**
+ * A sighting of a Subject.
+ * @author Soraya Remaili
+ */
 public class Sighting 
 {
     private String location;
     private String details;
     private ArrayList<String> accomplices;
 
+    /**
+     * Creates a new Sighting that details the Subject's actions.
+     * @param location The Subject's location.
+     * @param details What the subject is doing.
+     * @param accomplices Who the subject is with.
+     */
     public Sighting(String location, String details, ArrayList<String> accomplices)
     {
         this.location = location;
@@ -24,6 +34,10 @@ public class Sighting
         return details;
     }
 
+    /**
+     * Creates a formatted string representation of the accomplice list.
+     * @return A list of the Subject's accomplices.
+     */
     public String getAccomplices()
     {
         return ("with " + accomplices.toString().substring(1,accomplices.toString().length()-1));
