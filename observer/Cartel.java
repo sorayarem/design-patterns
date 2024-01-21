@@ -11,7 +11,7 @@ public class Cartel implements Observer
 
     /**
      * Creates a new Cartel that watches the indicated Subject.
-     * @param cook The subject that the cartel is observing.
+     * @param cook The subject that the Cartel is observing.
      */
     public Cartel(Subject cook)
     {
@@ -21,7 +21,7 @@ public class Cartel implements Observer
     }
 
     /*
-     * Adds a new sighting to the cartel's list with the given information.
+     * Adds a new sighting to the Cartel's list with the given information.
      */
     public void update(String location, String description, ArrayList<String> accomplices)
     {
@@ -29,8 +29,8 @@ public class Cartel implements Observer
     }
     
     /**
-     * Creates a string representation of the log of the cartel's sightings.
-     * @return A string representation of the cartel's sightings.
+     * Creates a string representation of the log of the Cartel's sightings.
+     * @return A string representation of the Cartel's sightings.
      */
     public String getLog()
     {

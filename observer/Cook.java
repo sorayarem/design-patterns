@@ -53,10 +53,12 @@ public class Cook implements Subject
     public void enterSighting(String location, String description, String accomplices)
     {
         ArrayList<String> accList = new ArrayList<String>(Arrays.asList(accomplices.split(", ")));
+        notifyObservers(location, description, accList);
+        /** 
         for(Observer o : observers)
         {
             o.update(location, description, accList);
-        }
+        }*/
     }
 
     public String getName()
