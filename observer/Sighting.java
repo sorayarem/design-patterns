@@ -24,11 +24,19 @@ public class Sighting
         this.accomplices = accomplices;
     }
 
+    /**
+     * Creates a string representation of the Sighting's location.
+     * @return A string representation of the location.
+     */
     public String getLocation()
     {
         return location;
     }
 
+    /**
+     * Creates a string representation of the Sighting's details.
+     * @return A string representation of the details.
+     */
     public String getDetails()
     {
         return details;

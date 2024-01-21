@@ -22,6 +22,7 @@ public class Cook implements Subject
 
     /**
      * Adds a new observer to the Cook's list.
+     * @param observer The observer to be added.
      */
     public void registerObserver(Observer observer)
     {
@@ -30,6 +31,7 @@ public class Cook implements Subject
 
     /**
      * Removes an observer from the Cook's list.
+     * @param observer The observer to be removed.
      */
     public void removeObserver(Observer observer)
     {
@@ -38,6 +40,9 @@ public class Cook implements Subject
 
     /**
      * Updates the information structures of all the Cook's Observers.
+     * @param location The location of the sighting.
+     * @param description What the subject was doing.
+     * @param accomplices Who the subject was seen with.
      */
     public void notifyObservers(String location, String description, ArrayList<String> accomplices)
     {
@@ -49,6 +54,9 @@ public class Cook implements Subject
 
     /**
      * Enters a new sighting into the information structures of all of the observers.
+     * @param location The location of the sighting.
+     * @param description What the subject was doing.
+     * @param accomplices Who the subject was seen with.
      */
     public void enterSighting(String location, String description, String accomplices)
     {
@@ -56,6 +64,10 @@ public class Cook implements Subject
         notifyObservers(location, description, accList);
     }
 
+    /**
+     * Creates a string representation of the Cook's name.
+     * @return A string representation of the name.
+     */
     public String getName()
     {
         return name;

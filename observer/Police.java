@@ -25,8 +25,11 @@ public class Police implements Observer
         people = new ArrayList<String>();
     }
 
-     /*
+     /**
      * Updates the Police's information fields with the given information.
+     * @param location The location of the sighting.
+     * @param description What the subject was doing.
+     * @param accomplices Who the subject was seen with.
      */
     public void update(String location, String description, ArrayList<String> accomplices)
     {

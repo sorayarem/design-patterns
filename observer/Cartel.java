@@ -20,8 +20,11 @@ public class Cartel implements Observer
         sightings = new ArrayList<Sighting>();
     }
 
-    /*
+    /**
      * Adds a new sighting to the Cartel's list with the given information.
+     * @param location The location of the sighting.
+     * @param description What the subject was doing.
+     * @param accomplices Who the subject was seen with.
      */
     public void update(String location, String description, ArrayList<String> accomplices)
     {
