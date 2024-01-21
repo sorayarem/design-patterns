@@ -54,11 +54,6 @@ public class Cook implements Subject
     {
         ArrayList<String> accList = new ArrayList<String>(Arrays.asList(accomplices.split(", ")));
         notifyObservers(location, description, accList);
-        /** 
-        for(Observer o : observers)
-        {
-            o.update(location, description, accList);
-        }*/
     }
 
     public String getName()
