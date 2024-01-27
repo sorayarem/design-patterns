@@ -16,9 +16,9 @@ public abstract class PlayerDecorator extends Player
 	{
 		for(int i = 0; i<lines.size(); i++)
 		{
-			for(int j = 0; j<lines.get(i).length(); j++)
+			for(int j = 0; j<decor.get(i).length(); j++)
 			{
-				if(decor.get(i).charAt(j) != lines.get(i).charAt(j))
+				if((decor.get(i).charAt(j) != lines.get(i).charAt(j)) && decor.get(i).charAt(j) != ' ')
 					{
 						String repl = lines.get(i).substring(0, j) + decor.get(i).charAt(j) + lines.get(i).substring(j+1);
 						lines.set(i, repl);
