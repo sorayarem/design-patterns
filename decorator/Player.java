@@ -18,7 +18,12 @@ public abstract class Player
 
 	public String toString()
 	{
-		return "";
+		String s = "";
+		for(String dec : lines)
+		{
+			s+= dec + "\n";
+		}
+		return s;
 	}
 
 }
