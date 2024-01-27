@@ -8,6 +8,7 @@ public abstract class PlayerDecorator extends Player
 
 	public PlayerDecorator(Player player)
 	{
+		super(player.lines, player.name);
 		this.player = player;
 	}
 
@@ -17,7 +18,7 @@ public abstract class PlayerDecorator extends Player
 		{
 			for(int j = 0; j<lines.get(i).length(); j++)
 			{
-				if(decor.get(i).charAt(j) != lines.get(i).charAt[j])
+				if(decor.get(i).charAt(j) != lines.get(i).charAt(j))
 					{
 						String repl = lines.get(i).substring(0, j) + decor.get(i).charAt(j) + lines.get(i).substring(j+1);
 						lines.set(i, repl);

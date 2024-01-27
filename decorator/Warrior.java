@@ -4,7 +4,7 @@ public class Warrior extends Player
 {
 	public Warrior(String name)
     {
-        super(getLines(warrior.txt),name);
+        super(FileReader.getLines("txt/warrior.txt"),name);
     }
 
 }
