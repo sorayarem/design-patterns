@@ -5,7 +5,7 @@ public class ThirdGradeState extends State
     public ThirdGradeState(SpellingList spellingList)
     {
         super(spellingList);
-        words = getWords("txt/third.txt");
+        words = FileReader.getWords("txt/third.txt");
     }
     
     public void increaseGrade()
@@ -15,7 +15,7 @@ public class ThirdGradeState extends State
 
     public void decreaseGrade()
     {
-        spellingList.setState(secondGradeState);
+        spellingList.setState(spellingList.getSecondGradeState());
     }
 
 }

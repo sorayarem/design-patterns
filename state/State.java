@@ -15,7 +15,9 @@ public abstract class State
 
     public String getNextWord()
     {
-        return(words.get(rand.nextInt(words.size())));
+        System.out.println(rand.nextInt(words.size()));
+        return "BLAHBLAH";
+        //return(words.get(rand.nextInt(words.size())));
     }
 
     public abstract void increaseGrade();

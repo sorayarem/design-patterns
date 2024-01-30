@@ -5,12 +5,12 @@ public class FirstGradeState extends State
     public FirstGradeState(SpellingList spellingList)
     {
         super(spellingList);
-        words = getWords("txt/first.txt");
+        words = FileReader.getWords("txt/first.txt");
     }
     
     public void increaseGrade()
     {
-        spellingList.setState(secondGradeState);
+        spellingList.setState(spellingList.secondGradeState);
     }
 
     public void decreaseGrade()

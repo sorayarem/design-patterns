@@ -9,10 +9,10 @@ public class SpellingList
 
     public SpellingList()
     {
-        state = new State(this);
         firstGradeState = new FirstGradeState(this);
         secondGradeState = new SecondGradeState(this);
         thirdGradeState = new ThirdGradeState(this);
+        state = firstGradeState;
     }
 
     public String getNextWord()
