@@ -10,7 +10,6 @@ public abstract class State
     public State(SpellingList spellingList)
     {
         this.spellingList = spellingList;
-        words = new ArrayList<String>();
         rand = new Random();
     }
 
