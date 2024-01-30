@@ -11,13 +11,12 @@ public abstract class State
     {
         this.spellingList = spellingList;
         words = new ArrayList<String>();
+        rand = new Random();
     }
 
     public String getNextWord()
     {
-        System.out.println(rand.nextInt(words.size()));
-        return "BLAHBLAH";
-        //return(words.get(rand.nextInt(words.size())));
+        return(words.get(rand.nextInt(words.size())));
     }
 
     public abstract void increaseGrade();
