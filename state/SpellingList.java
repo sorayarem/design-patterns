@@ -6,10 +6,10 @@ package state;
  */
 public class SpellingList
 {
-    State state;
-    FirstGradeState firstGradeState;
-    SecondGradeState secondGradeState;
-    ThirdGradeState thirdGradeState;
+    private State state;
+    private FirstGradeState firstGradeState;
+    private SecondGradeState secondGradeState;
+    private ThirdGradeState thirdGradeState;
 
     /**
      * Creates a SpellingList object and initializes its fields.
