@@ -22,6 +22,7 @@ public class SecondGradeState extends State
     public void increaseGrade()
     {
         spellingList.setState(spellingList.thirdGradeState);
+        System.out.println("Moving to Third Grade...");
     }
 
     /**
@@ -30,6 +31,7 @@ public class SecondGradeState extends State
     public void decreaseGrade()
     {
         spellingList.setState(spellingList.firstGradeState);
+        System.out.println("Moving to First Grade...");
     }
 
 }
