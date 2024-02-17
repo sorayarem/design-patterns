@@ -17,8 +17,8 @@ public class TaskList
 	{	
 		if(count<100)
 		{
-			tickets[count] = new Ticket(name, teamMember, difficulty);
-			count++;
+			tickets[count++] = new Ticket(name, teamMember, difficulty);
+			//count++;
 		}
 		else
 			System.out.println("Too many tasks in the TaskList!");
@@ -28,8 +28,8 @@ public class TaskList
 	{
 		if(count<100)
 		{
-			tickets[count] = ticket;
-			count++;
+			tickets[count++] = ticket;
+			//count++;
 		}
 		else
 			System.out.println("Too many tasks in the TaskList!");
