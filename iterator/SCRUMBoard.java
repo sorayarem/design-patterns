@@ -45,8 +45,8 @@ public class SCRUMBoard
 	public String toString()
 	{
 		String s = "***** " + projectName + " *****\n";
-		s += "ToDo:\n" + todo.toString();
-		s += "Doing:\n" + doing.toString();
+		s += "ToDo:\n" + todo.toString() + "\n";
+		s += "Doing:\n" + doing.toString() + "\n";
 		s += "Done:\n" + done.toString();
 		return s;
 	}

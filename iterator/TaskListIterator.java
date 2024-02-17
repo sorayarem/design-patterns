@@ -15,13 +15,12 @@ public class TaskListIterator
 
 	public boolean hasNext()
 	{
-		return (position < tickets.length);
+		return (position < tickets.length && tickets[position] != null);
 	}
 
 	public Ticket next()
 	{
-		position++;
-		return tickets[position];
+		return tickets[position++];
 	}
 }
 

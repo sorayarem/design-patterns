@@ -37,15 +37,19 @@ public class TaskList
 
 	public Ticket getTicket(String name)
 	{
-		for(int i = 0; i<tickets.length; i++)
+		for(int i = 0; i<=count; i++)
+		{
 			if(tickets[i].getName().toUpperCase().equals(name.toUpperCase()))
 				{
-					for(int j = i; j<tickets.length; j++)
+					Ticket temp = tickets[i];
+					for(int j = i; j<count; j++)
 					{
-						tickets[i] = tickets[i+1];
+						tickets[j] = tickets[j+1];
 					}
-					return tickets[i];
+					count--;
+					return temp;
 				}
+		}
 		return null;		
 	}
 
